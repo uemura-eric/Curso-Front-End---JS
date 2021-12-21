@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A soma!</h1>
+    <input type="number" id="num1"> +
+    <input type="number" id="num2"> 
+    <!-- o onclick ativa a funçao de clique do mouse. É preciso nomear a ação, no caso se chama: clicar-->
+    <input type="button" value="somar" onclick="clicar()">
+    <div id="res">O resultado é</div>
+
+        <script>
+            // criamos a funçao para o clicar do html
+            function clicar() { //criamos todas as variaveis para os ids
+            var n1 = window.document.getElementById("num1") 
+            var n2 = window.document.getElementById("num2")
+            var res = window.document.getElementById("res")
+            var f1 = Number(n1.value) //transformar string em number
+            var f2 = Number(n2.value)
+            var soma = f1 + f2
+            res.innerHTML = soma //fazer imprimir na tela a variavel soma
+            }
+
+        </script>
+
+</body>
+</html>
